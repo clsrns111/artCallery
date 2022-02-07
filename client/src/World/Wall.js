@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { usePlane, useBox, useCompoundBody } from "@react-three/cannon";
-import { useLoader, useThree } from "@react-three/fiber";
-import * as THREE from "three";
 
 function Wall1({ args, ...props }) {
   const [ref, api] = useBox(() => ({
@@ -18,25 +16,7 @@ function Wall1({ args, ...props }) {
   );
 }
 
-function Sound({ url }) {
-  const sound = useRef();
-
-  const [listener] = useState(() => new THREE.AudioListener());
-  const buffer = useLoader(THREE.AudioLoader, url);
-
-  useEffect(() => {
-    sound.current.setBuffer(buffer);
-    sound.current.setRefDistance(1);
-    sound.current.setLoop(false);
-    sound.current.play();
-  }, []);
-  return <positionalAudio ref={sound} args={[listener]} />;
-}
-
 function Wall() {
-  const [url, seturl] = useState(null);
-
-  const [play, setplay] = useState(false);
   const [ref] = useCompoundBody(() => ({
     mass: 1000,
     type: "Static",

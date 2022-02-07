@@ -13,35 +13,42 @@ body {
 }
 
 img {
-  /* z-index: 1000; */
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
 }
+
 input {
   z-index: 1000;
 }
+
 .audio {
-  z-index: 1000;
-  position: absolute;
-  top: 95.5%;
-  /* left: 27.5%; */
-  border-radius: 20px;
-  width: 50%;
-  /* display: block; */
-  left: 25%;
+  width: 100%;
+  margin: 0 auto;
 }
+audio {
+  z-index: 1000;
+  left: 10%;
+  position: absolute;
+  top: 94%;
+  left: 0%;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.9);
+}
+
 .image {
   z-index: 999;
-
-  /* padding: 1%; */
-
-  /* transform: translate(-50%, -50%); */
-  /* margin-top: 25%; */
-
-  background-color: transparent;
+  width: 1000px;
 }
+
+.container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0%;
+  padding: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

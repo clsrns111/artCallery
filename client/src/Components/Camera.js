@@ -10,14 +10,6 @@ function Camera({ appreciation }) {
       aspect={window.innerWidth / window.innerHeight}
       fov={70}
     />
-    // <PerspectiveCamera
-    //   position={[0, 0, 0]}
-    //   near={0.9}
-    //   far={200}
-    //   makeDefault
-    //   aspect={window.innerWidth / window.innerHeight}
-    //   fov={70}
-    // />
   );
 }
 

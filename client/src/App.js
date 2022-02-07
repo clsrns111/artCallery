@@ -47,18 +47,21 @@ function App() {
         {appreciation && (
           <div
             className="image"
-            style={{ width: window.innerWidth, height: window.innerHeight }}
+            style={{
+              width: window.innerWidth,
+              height: window.innerHeight,
+            }}
           >
+            <div className="container"></div>
             <img
+              alt={`${appreciation}`}
               style={size[appreciation]}
               src={`/images/${appreciation}.jpg`}
             />
 
-            <audio
-              controls
-              src={`/mp3/${appreciation}.mp3`}
-              className="audio"
-            ></audio>
+            <div className="audio">
+              <audio controls src={`/mp3/${appreciation}.mp3`}></audio>
+            </div>
           </div>
         )}
       </>
