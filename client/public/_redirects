@@ -1,1 +1,5 @@
-/* /index.html 200
+/html/index.html / 200!
+/html/about.html /about-bob-the-dent-guy 200!
+/html/portfolio.html /portfolio 200!
+/html/contact.html /contact-bob-the-dent-guy 200!
+https://bobthedentguy.netlify.com https://www.bobthedentguy.com/html/index.html 301!
